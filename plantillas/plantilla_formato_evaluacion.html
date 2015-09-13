@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 10px;
+	font-weight: bold;
+}
+.style5 {font-size: 12px; font-weight: bold;}
+-->
+</style>
+</head>
+
+<body>
+<table width="100%" border="0">
+  <tr>
+    <td width="372"><strong><em>Fecha Evaluacion:</em></strong> {fecha}</td>
+    <td width="334"><div align="center">
+            <img src="{urlimagenlogo}" width="208" height="142" />
+            <!--<img src="/resources/img/logoEscueladeFutbol.png" width="208" height="142" />-->
+        </div></td>
+  </tr>
+  <tr bgcolor="#CCCCCC">
+    <td colspan="2" bgcolor="#CCCCCC"><strong>FORMATO DE EVALUACION INICIAL</strong></td>
+  </tr>
+  <tr>
+    <td colspan="2"><table width="100%" border="0">
+      <!--DWLayoutTable-->
+      <tr>
+        <td colspan="2"><strong><em>Nombres</em></strong>: {nombres}</td>
+        </tr>
+      <tr>
+        <td width="334"><strong><em>Fecha Nac:</em></strong> {fechanac} - <em><strong>Edad:</strong></em> {edad}</td>
+        <td width="356"><strong><em>Experiencia Deportiva:</em></strong> {expdepor}</td>
+      </tr>
+      <tr>
+        <td><strong><em>Email:</em></strong> {email}</td>
+        <td><strong><em>Colegio:</em></strong> {colegio} {jornada}</td>
+      </tr>
+      <tr>
+        <td><strong><em>Responsable:</em></strong> {responsable}</td>
+        <td><strong><em>Celular:</em></strong> {celular}</td>
+      </tr>
+      <tr>
+        <td><strong><em>Dirección:</em></strong> {direccion}</td>
+        <td><strong><em>Barrio:</em></strong> {barrio}</td>
+      </tr>
+      <tr>
+        <td><strong><em>Referido por</em></strong>: {referido}</td>
+        <td><strong><em>Categoria :</em></strong> {categoria}</td>
+      </tr>
+      <tr>
+        <td height="21" colspan="2" valign="top"><strong><em>Entrenador: </em></strong>{entrenador}</td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td colspan="2"><table width="100%" border="1">
+      <!--DWLayoutTable-->
+      <tr>
+        <td width="404" height="28" valign="top" bgcolor="#CCCCCC"><span class="style5">ASPECTOS</span></td>
+        <td width="120" valign="top" bgcolor="#CCCCCC"><span class="style1">RESPUESTA ASPECTO</span></td>
+        <td width="103" valign="top" bgcolor="#CCCCCC"><span class="style1">RESPUESTA TEXTO </span> </td>
+        <td width="45" valign="top" bgcolor="#CCCCCC"><span class="style1">SI /NO </span></td>
+      </tr>
+	  {respuestasHtml}
+    </table></td>
+  </tr>
+  <tr>
+    <td colspan="2"><strong><em>CD: Con dificultad. NA: No aplica</em></strong></td>
+  </tr>
+  <tr>
+    <td height="23" colspan="2">&nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="2">
+	<table width="100%" height="139" border="1">
+	  <!--DWLayoutTable-->
+      <tr>
+        <td height="23" colspan="2" valign="top" bgcolor="#CCCCCC"><strong>RESULTADO DE LA EVALUACIÒN</strong></td>
+      </tr>
+      <tr>
+        <td height="23" colspan="2" valign="top">{resultadoEvaluacion}</td>
+        </tr>
+      <tr>
+        <td width="103" height="23">&nbsp;</td>
+        <td width="589">&nbsp;</td>
+      </tr>
+      
+      <tr>
+        <td height="23" valign="top"><em><strong>Observaciones</strong></em></td>
+        <td rowspan="2" valign="top">{observaciones}</td>
+      </tr>
+      <tr>
+        <td height="50">&nbsp;</td>
+        </tr>
+    </table>
+	</td>
+  </tr>
+  <tr>
+    <td colspan="2"><p>&nbsp;</p></td>
+  </tr>
+</table>
+</body>
+</html>
