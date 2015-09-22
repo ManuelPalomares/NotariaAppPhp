@@ -24,7 +24,25 @@ $accion = $datos["accion"];
  if($accion == "GUARDAR"){
      
      $formulario = new Formulario();
-     $res = $formulario->guardar($datos["codigo"],$datos["descripcion"]);
+     $res = $formulario->guardar($datos["codigo"],$datos["descripcion"],$datos["fecha"],$datos["valor"]);
+ 
+     echo json_encode($res);
+     
+ }
+ 
+  if($accion == "CONSULTAR"){
+     
+     $formulario = new Formulario();
+     $res = $formulario->consultar();
+ 
+     echo json_encode($res);
+     
+ }
+ 
+  if($accion == "ACTUALIZAR"){
+     
+     $formulario = new Formulario();
+     $res = $formulario->modificar($datos["codigo"],$datos["descripcion"],$datos["fecha"],$datos["valor"]);
  
      echo json_encode($res);
      
