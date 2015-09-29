@@ -13,14 +13,22 @@ $usuario = $session->isRegisterUserJson(false);
 
 $datos = $_REQUEST;
 $accion = $datos["accion"];
-$opcion = $datos["opcion"];
+$node = $datos["node"];
 $menu = new MenuApp();
 if($accion === "CONSULTARMODULOS"){
-    $menu->menuModulosJson($usuario);
+    
+    if($node == "root"){
+        $menu->menuModulosJson($usuario);
+    }
+    else{
+         $menu->menuSubMenusJson($usuario, $node);
+    }
+    
+    
+       
+    
+    
 }
 
-if($accion ==="CONSULTAROPCION"){
-    $menu->menuSubMenusJson($usuario, $opcion);
-}
 ?>
 
